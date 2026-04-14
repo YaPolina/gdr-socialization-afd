@@ -1,15 +1,4 @@
 #!/usr/bin/env python3
-"""
-step9_thesis_tables.py
-
-Produce consolidated thesis-ready tables from existing pipeline outputs.
-
-Tables produced:
-1. Main results table (Table 1): ATE and ATO by outcome × spec, with clustered CIs
-2. Balance summary table (Table 2): SMD before/after weighting
-3. Sensitivity summary table (Table 3): Rosenbaum delta-star for each mediator
-4. Spatial placebo summary (Table 4): observed vs. placebo distribution
-"""
 
 from __future__ import annotations
 

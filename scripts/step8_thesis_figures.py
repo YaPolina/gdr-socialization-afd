@@ -1,12 +1,4 @@
 #!/usr/bin/env python3
-"""
-step8_thesis_figures.py
-
-Publication-quality figures for the thesis:
-"Does growing up in the former GDR increase AfD support?"
-
-Produces 10 figures in outputs/figures/.
-"""
 
 from __future__ import annotations
 

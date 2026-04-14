@@ -1,30 +1,7 @@
 #!/usr/bin/env python3
 """
-step5_rosenbaum_delta_curve_autorun.py
-
-Rosenbaum-style mediator sensitivity analysis with automatic defaults.
-
-Designed to run in the ALLBUS 2023 thesis project *without required CLI arguments*.
-
-Default behavior:
-1) Load step1_model_afd.csv
-2) Load step3 results if available and extract tau_hat from preferred setup:
-   outcome=y_afd_vote, spec=spec_a_plus, effect_col=ate_aipw
-3) Fall back to estimating tau_hat with a weighted linear probability model if no
-   matching step3 result can be found.
-4) Automatically try mediator candidates saved in step2: df44, dn05, dn07.
-5) For each available mediator:
-   - standardize mediator to SD units within the estimation sample,
-   - estimate gamma from weighted model Y ~ T + S + X with cluster-robust SE,
-   - construct tau(delta) = tau_hat - gamma * delta over a delta grid,
-   - compute delta* where tau(delta)=0,
-   - save summary CSV, curve CSV, and plot PNG.
-6) Save one combined summary CSV across all mediators.
-
-This closes the practical gap in the current project by producing the missing
-Rosenbaum-style tau(delta) curve and tipping point delta* automatically.
-
-Dependencies: pandas, numpy, statsmodels, matplotlib
+Rosenbaum-style sensitivity analysis: for each candidate unobserved
+confounder, compute the tau(delta) curve and tipping-point delta*.
 """
 
 from __future__ import annotations

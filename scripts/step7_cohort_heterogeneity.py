@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 """
-step7_cohort_heterogeneity.py
-
 Estimate treatment effect heterogeneity across age cohorts.
 
-Uses AIPW pseudo-outcomes (psi) from step3 individual-level data.
+Uses AIPW pseudo-outcomes (psi) from step2 individual-level data.
 For each cohort bin, computes weighted mean of psi = cohort-specific ATE,
 plus bootstrap CI clustered by xs11.
 """

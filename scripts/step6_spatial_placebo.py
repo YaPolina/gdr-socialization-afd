@@ -1,28 +1,7 @@
 #!/usr/bin/env python3
 """
-step6_spatial_placebo.py
-
-Spatial placebo test for ALLBUS 2023 thesis project.
-
-What this version does:
-1) Loads the project CSV produced by step1_build_model_afd.py.
-2) Selects one outcome, one treatment, and one X specification (spec_a or spec_a_plus).
-3) Estimates the observed effect with a weighted linear probability model (WLS)
-   and cluster-robust standard errors.
-4) Builds a spatial placebo distribution by shuffling cluster-level treatment
-   intensities across clusters and then randomly re-assigning binary treatment
-   status within each cluster to match the permuted intensity.
-5) Computes a two-sided placebo p-value.
-6) Saves summary CSV, placebo draws CSV, and histogram PNG.
-
-This rewrite is compatible with the user's current project structure:
-- treatment: east_youth
-- outcomes: y_afd_vote, y_afd_vote_all_valid, would_not_vote
-- covariate specs: spec_a, spec_a_plus
-- weights: wghtpew
-- clusters: land or xs11
-
-Dependencies: pandas, numpy, statsmodels, matplotlib, argparse
+Spatial placebo test: permute cluster-level treatment intensities
+and compare the observed ATE to a null distribution (1000 draws).
 """
 
 from __future__ import annotations
