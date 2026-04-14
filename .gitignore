@@ -1,0 +1,97 @@
+# Claude Code worktrees (auto-generated)
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Raw survey data (restricted-use, not redistributable)
+data/raw/*
+!data/raw/README.md
+
+# Intermediate/derived data (reproducible from scripts)
+data/derived/
+
+# Thesis drafts (not part of the codebase)
+thesis_full*.docx
+thesis_sections.docx
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ── Old / superseded scripts (keep locally, exclude from repo) ──
+scripts/run_pipeline.py
+scripts/run_step6_spatial_placebos.py
+scripts/step3_ate_overlap.py
+scripts/step3b_parental_ses_descriptives.py
+scripts/step4_inference_xs11.py
+scripts/step5_dose10_dml_hte.py
+scripts/step5_partial_identification_bounds.py
+scripts/step5_posttreatment_sensitivity.py
+scripts/step6_bootstrap_ci_dose10.py
+scripts/step7_make_all_figures.py
+scripts/plot_balance_overlap_diagnostics.py
+scripts/plot_dg10_map.py
+scripts/plot_dg10_map_by_family_ses.py
+scripts/plot_land_current_residence_afd_east_vs_west_youth.py
+scripts/plot_parental_ses_descriptives.py
+
+# ── Old / stale output tables (pre-renumbering & dose_10) ──
+outputs/tables/step1_pv01_distribution.csv
+outputs/tables/step2_afd_by_east_youth.csv
+outputs/tables/step2_dose_summary.csv
+outputs/tables/step2_model_afd_audit.csv
+outputs/tables/step2_model_afd_labels.csv
+outputs/tables/step2_model_afd_summary.csv
+outputs/tables/step3_ate_overlap_eastyouth_results.csv
+outputs/tables/step3_ate_overlap_eastyouth_sample_sizes.csv
+outputs/tables/step3_dml_ate.csv
+outputs/tables/step3_overlap.csv
+outputs/tables/step3c_balance_diagnostics_detail.csv
+outputs/tables/step3c_balance_diagnostics_summary.csv
+outputs/tables/step4_cate_by_age1990.csv
+outputs/tables/step4_cate_by_yborn.csv
+outputs/tables/step4_cate_overall.csv
+outputs/tables/step5_dose10_*.csv
+outputs/tables/step6_dose10_*.csv
+
+# ── Legacy audit file ──
+outputs/tables/variable_audit.csv
+
+# ── Intermediate per-confounder Rosenbaum figures ──
+outputs/figures/step5_rosenbaum_delta_curve__*.png
+
+# ── Intermediate step4/step5 tables (reproducible from scripts) ──
+outputs/tables/step4_inference_multicluster_eastyouth_results.csv
+outputs/tables/step5_rosenbaum_delta_curve*.csv
+outputs/tables/step5_sensitivity_*.csv
+
+# ── Old subfolder structure (merged into figures/ and tables/) ──
+outputs/figures/thesis/
+outputs/thesis_tables/
+outputs/placebo/
+
+# ── Cleanup script (one-time use) ──
+cleanup_for_push.sh

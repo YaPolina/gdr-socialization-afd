@@ -1,0 +1,7 @@
+outcome,spec,max_smd_raw_unweighted,mean_smd_raw_unweighted,max_smd_survey_only,mean_smd_survey_only,max_smd_ipw_total,mean_smd_ipw_total,max_smd_ow_total,mean_smd_ow_total
+would_not_vote,spec_a,0.6843,0.1143,0.6913,0.1141,0.3552,0.0736,0.3011,0.0579
+would_not_vote,spec_a_plus,0.6843,0.1143,0.6913,0.1141,0.1221,0.0397,0.0464,0.0082
+y_afd_vote,spec_a,0.6738,0.1147,0.6794,0.1145,0.3636,0.0732,0.3055,0.0581
+y_afd_vote,spec_a_plus,0.6738,0.1147,0.6794,0.1145,0.1418,0.0418,0.0376,0.0075
+y_afd_vote_all_valid,spec_a,0.6843,0.1143,0.6913,0.1141,0.3552,0.0736,0.3011,0.0579
+y_afd_vote_all_valid,spec_a_plus,0.6843,0.1143,0.6913,0.1141,0.1221,0.0397,0.0464,0.0082

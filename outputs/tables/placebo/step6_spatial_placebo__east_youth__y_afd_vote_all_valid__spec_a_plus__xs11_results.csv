@@ -1,0 +1,2 @@
+outcome,treatment,spec,cluster_var,n_obs,n_clusters,tau_observed,cluster_robust_se,permutation_p_value,placebo_mean,placebo_sd,B,seed
+y_afd_vote_all_valid,east_youth,spec_a_plus,xs11,2777,191,0.13469126921838934,0.015948869857059126,0.0,9.578808971020033e-05,0.012901808328399565,1000,12345
