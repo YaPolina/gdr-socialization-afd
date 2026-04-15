@@ -30,12 +30,11 @@ The raw dataset is not included due to licensing restrictions. After obtaining i
 │
 ├── data/
 │   ├── raw/                 Raw ALLBUS data (not tracked; see README inside)
-│   ├── derived/             Intermediate datasets (not tracked; reproducible from step 1)
 │   └── external/            germany_states.geojson for map figures
 │
 └── outputs/
-    ├── figures/             Thesis figures (fig01--fig12, fig_cohort_age1990)
-    └── tables/              Summary tables (table1--table6)
+    ├── figures/             Thesis figures
+    └── tables/              Summary tables
         └── placebo/         Spatial placebo draws and results
 ```
 
@@ -79,10 +78,10 @@ poetry run python scripts/step6_spatial_placebo.py --all
 #          at reunification to test whether socialisation intensity matters
 poetry run python scripts/step7_cohort_heterogeneity.py
 
-# Step 8: Generate all thesis figures (fig01–fig12) from saved estimates
+# Step 8: Generate all thesis figures from saved estimates
 poetry run python scripts/step8_thesis_figures.py
 
-# Step 9: Generate thesis summary tables (table1–table6)
+# Step 9: Generate thesis summary tables
 poetry run python scripts/step9_thesis_tables.py
 ```
 
